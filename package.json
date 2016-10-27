@@ -51,7 +51,7 @@
     "asar": "^0.12.3",
     "babel-core": "^6.17.0",
     "babel-eslint": "^7.0.0",
-    "babel-loader": "^6.2.5",
+    "babel-loader": "^6.2.7",
     "babel-plugin-add-module-exports": "^0.2.1",
     "babel-plugin-dev-expression": "^0.2.1",
     "babel-plugin-tcomb": "^0.3.19",
