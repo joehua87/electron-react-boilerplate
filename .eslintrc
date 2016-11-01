@@ -21,10 +21,11 @@
     "react/jsx-no-bind": "off",
     "react/jsx-filename-extension": ["error", { "extensions": [".js", ".jsx"] }],
     "react/prefer-stateless-function": "off",
-    "flowtype-errors/show-errors": 2
+    "flowtype/define-flow-type": 1,
+    "flowtype/use-flow-type": 1
   },
   "plugins": [
-    "flowtype-errors",
+    "flowtype",
     "import",
     "promise",
     "react"
