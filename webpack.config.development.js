@@ -6,14 +6,11 @@
 
 import webpack from 'webpack';
 import merge from 'webpack-merge';
-import formatter from 'eslint-formatter-pretty';
 import baseConfig from './webpack.config.base';
 
 const port = process.env.PORT || 3000;
 
 export default merge(baseConfig, {
-  debug: true,
-
   devtool: 'cheap-module-eval-source-map',
 
   entry: [
@@ -51,10 +48,6 @@ export default merge(baseConfig, {
         ]
       }
     ]
-  },
-
-  eslint: {
-    formatter
   },
 
   plugins: [
