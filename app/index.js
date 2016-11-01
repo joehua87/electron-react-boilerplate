@@ -12,7 +12,7 @@ import './app.global.css';
 const store = configureStore();
 const history = syncHistoryWithStore(hashHistory, store, {
   selectLocationState: selectLocationState(),
-})
+});
 
 render(
   <Provider store={store}>
