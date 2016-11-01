@@ -3,9 +3,8 @@
  */
 
 import path from 'path';
-import validate from 'webpack-validator';
 
-export default validate({
+export default {
   module: {
     loaders: [{
       test: /\.jsx?$/,
@@ -27,8 +26,12 @@ export default validate({
 
   // https://webpack.github.io/docs/configuration.html#resolve
   resolve: {
-    extensions: ['', '.js', '.jsx', '.json'],
-    packageMains: ['webpack', 'browser', 'web', 'browserify', ['jam', 'main'], 'main']
+    modules: [
+      path.join(__dirname, './app'),
+      path.join(__dirname, './node_modules'),
+    ],
+    extensions: ['.js', '.jsx', '.json'],
+    mainFields: ['webpack', 'browser', 'web', 'browserify', ['jam', 'main'], 'main']
   },
 
   plugins: [],
@@ -37,4 +40,4 @@ export default validate({
     // put your node 3rd party libraries which can't be built with webpack here
     // (mysql, mongodb, and so on..)
   ]
-});
+};
