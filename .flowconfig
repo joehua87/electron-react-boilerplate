@@ -1,5 +1,8 @@
 [ignore]
+.*/node_modules/electron/.*
 .*/node_modules/fbjs/.*
+.*/node_modules/immutable/.*
+.*/node_modules/.*.json
 .*/app/main.js
 .*/app/dist/.*
 .*/release/.*
