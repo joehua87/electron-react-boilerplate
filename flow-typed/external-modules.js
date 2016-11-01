@@ -2,6 +2,10 @@ declare module 'CSSModule' {
   declare var exports: { [key: string]: string };
 }
 
+declare module 'FileModule' {
+  declare var exports: string;
+}
+
 declare module 'debug' {
   declare var exports: any;
 }
